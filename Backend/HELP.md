@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.aseemjan.jobportal.spring-boot-job-portal-app' is invalid and this project uses 'com.aseemjan.jobportal.spring_boot_job_portal_app' instead.
+* The original package name 'com.aseemjan.jobportal.spring-boot-job-portal-app' is invalid and this project uses 'com.aseemjan.jobportal.employment_platform' instead.
 
 # Getting Started
 

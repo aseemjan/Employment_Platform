@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.aseemjan.jobportal</groupId>
-	<artifactId>spring-boot-job-portal-app</artifactId>
+	<artifactId>employment-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>employment-app</name>
+	<description>Employment Platform Application</description>
 	<url/>
 	<licenses>
 		<license/>

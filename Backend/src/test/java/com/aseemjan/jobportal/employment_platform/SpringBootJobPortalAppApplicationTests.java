@@ -1,4 +1,4 @@
-package com.aseemjan.jobportal.spring_boot_job_portal_app;
+package com.aseemjan.jobportal.employment_platform;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
