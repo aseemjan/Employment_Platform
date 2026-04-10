@@ -1,4 +1,4 @@
-package com.aseemjan.jobportal.employment_platform;
+package com.aseemjan.employment_platform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
