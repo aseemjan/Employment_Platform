@@ -200,16 +200,12 @@ mvn test
 
 ## 📊 GitHub Badges
 
-> Replace `<username>` and `<repo>` after creating repo
-
-```
 ![Java](https://img.shields.io/badge/Java-17-blue)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-Backend-green)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Build](https://img.shields.io/badge/Build-Passing-success)
-```
 
 ---
 
