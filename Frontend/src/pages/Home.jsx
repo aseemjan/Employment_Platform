@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import heroImage from "/assets/job-portal-hero.avif";
+import heroImage from "../assets/heroImage.png";
 
 const Home = () => (
   <div className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 py-10 pt-24">
