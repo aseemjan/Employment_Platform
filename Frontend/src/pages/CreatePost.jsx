@@ -15,7 +15,9 @@ const CreatePost = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
     const { profile, desc, exp, techs } = form;
 
     // Validation
@@ -40,9 +42,15 @@ const CreatePost = () => {
         .filter(Boolean),
     };
 
-    await createJobPost(newJob);
-    alert("Job post created successfully!");
-    navigate("/employee/feed");
+   try {
+      await createJobPost(newJob);
+      alert("Job post created successfully!");
+      navigate("/employee/feed");
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong while creating job post.");
+    
+    }
   };
 
   return (
@@ -52,7 +60,7 @@ const CreatePost = () => {
           Create Job Post
         </h2>
 
-        <div className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-gray-600 mb-1">
               Job Title<span className="text-red-700 font-bold">*</span>
@@ -60,6 +68,7 @@ const CreatePost = () => {
             <input
               type="text"
               name="profile"
+              value={form.profile}
               placeholder="e.g. Frontend Developer"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -73,6 +82,7 @@ const CreatePost = () => {
             <textarea
               name="desc"
               rows="4"
+              value={form.profile}
               placeholder="Describe the job role and responsibilities"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
@@ -88,6 +98,7 @@ const CreatePost = () => {
               type="number"
               name="exp"
               min="0"
+              value={form.profile}
               placeholder="e.g. 2"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -102,16 +113,17 @@ const CreatePost = () => {
             <input
               type="text"
               name="techs"
+              value={form.profile}
               placeholder="e.g. React, Node.js, MongoDB"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
-        </div>
+        </form>
 
         <div className="mt-6 text-center">
           <button
-            onClick={handleSubmit}
+            type = "submit"
             className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
           >
             Submit
