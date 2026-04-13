@@ -43,4 +43,5 @@ public class SearchRepoImplements implements SearchRepository {
 
         return jobPosts;
     }
+
 }

@@ -7,6 +7,7 @@ import com.aseemjan.employment_platform.model.JobPostModel;
 import jakarta.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import io.swagger.v3.oas.annotations.Hidden;
@@ -22,6 +23,7 @@ public class JobPostController {
     JobPostRepository repo;
 
     @Autowired
+    @Qualifier("searchRepoImplements")
     SearchRepository search_repo;
 
     @Hidden

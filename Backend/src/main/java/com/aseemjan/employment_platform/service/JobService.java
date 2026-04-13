@@ -2,7 +2,9 @@ package com.aseemjan.employment_platform.service;
 
 import com.aseemjan.employment_platform.model.JobPostModel;
 import com.aseemjan.employment_platform.repository.JobPostRepository;
+import com.aseemjan.employment_platform.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,7 +26,10 @@ public class JobService {
     }
 
     // Search jobs
+    @Autowired
+    @Qualifier("searchRepoImplements")
+    SearchRepository search_repo;
     public List<JobPostModel> searchJobs(String text) {
-        return repo.findByText(text);
+        return search_repo.findByText(text);
     }
 }
