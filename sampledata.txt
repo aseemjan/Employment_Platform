@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "1",
+    "desc": "Frontend developer responsible for building responsive UI using React and integrating REST APIs.",
+    "exp": 1,
+    "profile": "Frontend Developer",
+    "techs": ["javascript", "react", "html", "css", "redux"]
+  },
+  {
+    "_id": "2",
+    "desc": "Backend engineer specializing in building scalable APIs using Java Spring Boot and handling database operations.",
+    "exp": 3,
+    "profile": "Java Backend Developer",
+    "techs": ["java", "springboot", "microservices", "mongodb", "rest api"]
+  },
+  {
+    "_id": "3",
+    "desc": "Full stack developer working on both frontend and backend using MERN stack for enterprise applications.",
+    "exp": 4,
+    "profile": "Full Stack Developer",
+    "techs": ["mongodb", "express", "react", "nodejs"]
+  },
+  {
+    "_id": "4",
+    "desc": "DevOps engineer managing CI/CD pipelines and containerized deployments using Docker and Kubernetes.",
+    "exp": 5,
+    "profile": "DevOps Engineer",
+    "techs": ["docker", "kubernetes", "jenkins", "aws", "linux"]
+  },
+  {
+    "_id": "5",
+    "desc": "Data analyst responsible for analyzing business data, creating dashboards, and generating insights.",
+    "exp": 2,
+    "profile": "Data Analyst",
+    "techs": ["python", "sql", "powerbi", "excel"]
+  },
+  {
+    "_id": "6",
+    "desc": "Machine learning engineer building predictive models and working with large datasets.",
+    "exp": 4,
+    "profile": "Machine Learning Engineer",
+    "techs": ["python", "scikit-learn", "tensorflow", "pandas"]
+  },
+  {
+    "_id": "7",
+    "desc": "Android developer building mobile applications with modern UI/UX practices.",
+    "exp": 3,
+    "profile": "Android Developer",
+    "techs": ["java", "kotlin", "android", "firebase"]
+  },
+  {
+    "_id": "8",
+    "desc": "Cloud engineer responsible for deploying and managing applications on AWS infrastructure.",
+    "exp": 6,
+    "profile": "Cloud Engineer",
+    "techs": ["aws", "ec2", "s3", "lambda", "cloudformation"]
+  },
+  {
+    "_id": "9",
+    "desc": "UI/UX designer focused on creating intuitive and user-friendly designs for web and mobile applications.",
+    "exp": 2,
+    "profile": "UI/UX Designer",
+    "techs": ["figma", "adobe xd", "wireframing", "prototyping"]
+  },
+  {
+    "_id": "10",
+    "desc": "Software architect designing scalable system architecture and guiding development teams.",
+    "exp": 10,
+    "profile": "Software Architect",
+    "techs": ["system design", "microservices", "java", "cloud", "design patterns"]
+  }
+]
